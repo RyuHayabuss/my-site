@@ -30,7 +30,7 @@ body {
 
 .page-header a {
   margin-left: 56px;
-  color: #FFDAB9;
+  color: #696969;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -171,8 +171,8 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #00417d;
-  color: #ffffff;
+  background-color: #000000;
+  color: #c0c0c0;
 }
 
 .page-footer a {
