@@ -77,12 +77,12 @@ body {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Snell Roundhand", cursive;
+  font-family: fantasy;
   font-size: 64px;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
-  text-decoration-color: #bdb76b;
+  color: #bdb76b;
 
 }
 .style-text {
