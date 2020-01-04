@@ -30,7 +30,7 @@ body {
 
 .page-header a {
   margin-left: 56px;
-  color: #696969;
+  color: #ffd700;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -172,7 +172,7 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #000000;
+  background-color: #000080;
   color: #c0c0c0;
 }
 
