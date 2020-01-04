@@ -77,12 +77,15 @@ body {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: "Snell Roundhand", cursive;
   font-size: 64px;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
-  color: #bdb76b;
+
+}
+.style-text {
+  font-family: "Snell Roundhand", cursive;
 }
 
 .user-image {
