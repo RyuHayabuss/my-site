@@ -200,3 +200,8 @@ body {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
 }
+.button {
+  border: 2px solid;
+  background: #dc143c;
+
+}
