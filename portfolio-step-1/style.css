@@ -173,7 +173,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #288be6;
+  background-color: #dc143c;
   color: #ffffff;
 }
 
@@ -199,9 +199,4 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
-}
-.button {
-  border: 2px solid;
-  background: #dc143c;
-
 }
