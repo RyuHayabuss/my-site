@@ -63,6 +63,8 @@ body {
   line-height: 96px;
   font-weight: 400;
   color: #c0c0c0;
+  padding: 20px 50px;
+ background-color: #555555;
 }
 
 .hero-image p {
