@@ -63,12 +63,9 @@ body {
   line-height: 96px;
   font-weight: 400;
   color: #c0c0c0;
-  
+
 }
-.button-2 {
- background-color: #555555;
- color:#ffffff;
-}
+
 .hero-image p {
   margin: 0;
   font-size: 32px;
@@ -170,7 +167,6 @@ body {
   margin: 0 0 24px;
 }
 
-}
 .button {
   padding: 6px 20px;
   display: inline-block;
