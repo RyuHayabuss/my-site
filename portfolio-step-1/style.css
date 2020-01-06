@@ -165,7 +165,11 @@ body {
 .projects p {
   margin: 0 0 24px;
 }
-
+.button-2 {
+ padding: 20px 50px;
+ background-color: #555555;
+ color:#ffffff;
+}
 .button {
   padding: 6px 20px;
   display: inline-block;
