@@ -10,7 +10,9 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 928px;
   margin: 0 auto;
