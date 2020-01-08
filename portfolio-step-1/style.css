@@ -1,4 +1,5 @@
 body {
+  position: relative
   margin: 0;
   min-width: 960px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
