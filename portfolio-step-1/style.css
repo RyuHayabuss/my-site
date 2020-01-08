@@ -7,10 +7,10 @@ body {
   line-height: 32px;
   color: #191970;
   background-color: #808080;
-  background-image: url("img/drakon_peshchera_svet_art_94937_2308x1417.jpg"), url("img/fire_fist_vs_water_fist-wallpaper-1920x1200.jpg"), url("img/114806-magma-tekstura-nebo-tumannost-vulkanicheskaya_poroda-1920x1080.jpg");
+  background-image: url("img/drakon_peshchera_svet_art_94937_2308x1417.jpg"), url("img/stihiya-voda-zemlya-ogon.jpg"), url("img/114806-magma-tekstura-nebo-tumannost-vulkanicheskaya_poroda-1920x1080.jpg");
 
   background-repeat: no-repeat;
-  background-position: top center, center center, bottom center;
+  background-position: top center, 50% 55%, bottom center;
 }
 a {
   text-decoration: none;
@@ -186,7 +186,7 @@ a {
   padding: 40px 0;
   background-color: #000080;
   color: #c0c0c0;
-  background-image: url("img/Deadpool-Logo-Wallpaper-On-Wallpaper-Hd-4.jpg"): 
+  background-image: url("img/Deadpool-Logo-Wallpaper-On-Wallpaper-Hd-4.jpg"); 
 }
 
 .page-footer a {
