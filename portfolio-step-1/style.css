@@ -7,10 +7,10 @@ body {
   line-height: 32px;
   color: #191970;
   background-color: #808080;
-  background-image: url("img/drakon_peshchera_svet_art_94937_2308x1417.jpg"), url("img/stihiya-voda-zemlya-ogon.jpg"), url("img/114806-magma-tekstura-nebo-tumannost-vulkanicheskaya_poroda-1920x1080.jpg");
+  background-image: url("img/drakon_peshchera_svet_art_94937_2308x1417.jpg"), url("img/stihiya-voda-zemlya-ogon.jpg"), url("img/114806-magma-tekstura-nebo-tumannost-vulkanicheskaya_poroda-1920x1080.jpg"), url("img/itl.cat_4k-pattern-wallpaper_851540.png");
 
   background-repeat: no-repeat;
-  background-position: top center, 50% 55%, bottom center;
+  background-position: top center, 50% 55%, left bottom, right bottom;
 }
 a {
   text-decoration: none;
