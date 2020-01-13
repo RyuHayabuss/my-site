@@ -245,3 +245,9 @@ visibility: visible;
   border-right: 100px;
   bottom: 0px;
 }
+.bot {
+  border-radius: 90%;
+}
+.bot1 {
+  border-radius: 50%;
+}
