@@ -82,7 +82,9 @@ a {
 .intro {
   margin: 0 0 120px;
   background-image: url("img/stihiya-voda-zemlya-ogon.jpg");
-  background-position: 100% 50%;
+  background-position: 470px 50%;
+  background-size: 800px;
+  background-repeat: no-repeat;
 }
 
 .subheading {
