@@ -255,3 +255,14 @@ visibility: visible;
 .bot1 {
   border-radius: 50%;
 }
+.bot2 {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.bot3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
