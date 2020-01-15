@@ -138,10 +138,12 @@ a {
 
 .skill-html {
   background-image: url("img/icon-html.svg");
+  background-repeat: no-repeat;
 }
 
 .skill-css {
   background-image: url("img/icon-css.svg");
+  background-repeat: no-repeat;
 }
 
 .level {
