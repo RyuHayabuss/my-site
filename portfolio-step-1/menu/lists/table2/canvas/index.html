@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Использование тега CANVAS </title>
+	<meta charset="utf-8">
+	<script>
+		window.onload = function () {
+			var drawingCanvas = document.getElementById('smile');
+			if(drawingCanvas && drawingCanvas.getContext) {
+				var context = drawingCanvas.getContext('2d');
+				//верхняя окружность
+				context.strokeStyle = "#f00";
+				context.fillStyle = "#f00";
+				context.beginPath();
+				context.arc(300,100,100,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// верхний левый глаз
+				context.fillStyle = "#fff";
+				context.beginPath();
+				context.arc(284,90,8,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// верхний правый глаз
+				context.beginPath();
+				context.arc(316,90,8,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// верхний рот
+				context.beginPath();
+				context.moveTo(270,115);
+				context.quadraticCurveTo(300,130,330,115);
+				context.quadraticCurveTo(300,150,270,115);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// средняя окружность
+				context.strokeStyle = "#ff0";
+				context.fillStyle = "#ff0";
+				context.beginPath();
+				context.arc(300,300,100,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// средний левый глаз
+				context.fillStyle = "#000";
+				context.beginPath();
+				context.arc(284,290,8,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// средний правый глаз
+				context.beginPath();
+				context.arc(316,290,8,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// средний рот
+				context.beginPath();
+				context.moveTo(270,315);
+				context.quadraticCurveTo(300,330,330,315);
+				context.quadraticCurveTo(300,350,270,315);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// нижняя окружность
+				context.strokeStyle = "#0b3";
+				context.fillStyle = "#0b3";
+				context.beginPath();
+				context.arc(300,500,100,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// нижний левый глаз
+				context.fillStyle = "#fff";
+				context.beginPath();
+				context.arc(284,490,8,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// нижний правый глаз
+				context.beginPath();
+				context.arc(316,490,8,0,Math.PI*2,true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+				// нижний рот
+				context.beginPath();
+				context.moveTo(270,515);
+				context.quadraticCurveTo(300,530,330,515);
+				context.quadraticCurveTo(300,550,270,515);
+				context.closePath();
+				context.stroke();
+				context.fill();
+			}
+		}
+	</script>
+</head>
+<body>
+	<canvas id="smile" width="500" height="800">
+	</canvas>
+</body>
+</html>
