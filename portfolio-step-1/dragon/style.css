@@ -128,7 +128,7 @@ a {
 }
 
 .skills-list {
-  position: absolute;
+  padding-right: 1400px;
   left: 180px;
   bottom: 650px;
   padding-left: 32px;
@@ -267,4 +267,7 @@ visibility: visible;
   position: absolute;
   top: 50px;
   left: 50px;
+}
+.bot4 {
+  padding-left: 1300px;
 }
