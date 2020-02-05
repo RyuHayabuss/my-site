@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<style>
+		.tag {
+			background-image: url("img/517cba7883f539e88ac665d6835b--kartiny-i-panno-melodiya-dozhdya-print-s-akvareli.jpg")
+		}
+	</style>
+	<title> Пример использования элемента INPUT типа text </title>
+</head>
+<body leftmargin=100 rightmargin=100 text=#78bed0 bgcolor=#112232>
+	<h2 align=center> Пример простейшей анкеты </h2>
+	<form>
+		Введите Ваше имя <input type=text name="name"><br>
+		<hr>
+		<i> Введите Вашу фамилию </i>
+		<input type=text name="surname" size=15><br>
+		<hr>
+		Введите Ваш адрес электронной почты
+		<input type=text name="Email" size=20><br>
+		<hr>
+		<b> Введите номер Вашего телефона </b>
+		<input type=text name="Phone" size=10 maxlength=13><br>
+		<hr>
+		Введите телефонный код города, в котором Вы живёте
+		<input type=text name="city_code"><br>
+	</form>
+	<h2 align=center> Пример аутентификации </h2>
+	<hr size=20 color=lightgrey>
+	<form action="www.hthy.net/cgi/autocgi.pl">
+		<h3> Введите параметры доступа </h3>
+		Введите имя пользователя
+		<input type=text value="Трамп"><br><br>
+		Введите пароль
+		<input type=password size=8 maxlength=8><br>
+		<i> Примечание: длина пароля не должна превышать восемь символов </i>
+		<hr size=20 color=lightgrey>
+	</form>
+	<form name="Field">
+		<p><textarea class="tag" style="color: #800000" rows=29 cols=38></textarea>
+		<input name="Field" type="image" src="img/Lord-Print-logo.png"></p>
+		<input name="Field" type="reset"><br>
+		<p><input name="Field" type="checkbox"> Сок<br>
+		   <input name="Field" type="checkbox"> Чай<br>
+		   <input name="Field" type="checkbox"> Кофе</p>
+	</form>
+</body>
+</html>
