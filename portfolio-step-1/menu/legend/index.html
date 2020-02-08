@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<title>
+Пример использования тегов FIELDSET и LEGEND для разметки формы
+</title>
+</head>
+<body leftmargin=100 rightmargin=100 text=#78bed0 bgcolor=#112232>
+	<h2 align=center> Заполните анкету </h2>
+	<form action="www.dsdr.da.ru/cgi-bin/hyh.pl">
+		<p>
+			<fieldset>
+				<legend><b><i> Личная информация </i></b></legend>
+				Фамилия: <input name="last name" type="text" size=30>
+				Имя: <input name="first name" type="text">
+				Телефон: <input name="phone" type="text"><br>
+				Адрес: <input name="address" type="text" size=90>
+			</fieldset>
+			<fieldset>
+				<legend align=right> Опыт работы Web-мастером </legend>
+				<input name="Experience"
+				        type="radio"
+				        value="none"
+				checked> Нет опыта
+				<input name="Experience"
+				      type="radio"
+				      value="<1"> Меньше 1 года
+				<input name="Experience"
+				      type="radio"
+				      value="1-3"> от 1 до 3 лет
+				<input name="Experience"
+				      type="radio"
+				      value=">3"> более 3 лет
+				</fieldset>
+				<br>
+				<fieldset>
+				Есть ли у Вас готовые работы или законченные проекты, в которых Вы учавствовали?
+				<br>
+				<input name="work"
+				       type="radio"
+				       value="Yes"> Да
+				<input name="work"
+				       type="radio"
+				       value="No" checked>Нет
+				       Если да, то перечислите их ниже:<br>
+				<textarea name="current_medication"
+				          rows="10" cols="50" tabindex="40">
+				          </textarea>
+				          </fieldset>
+				          <input type=reset>
+				          <input type=submit>
+				          </form>
+				          </body>
+				          </html>                                 
+
+
+				
