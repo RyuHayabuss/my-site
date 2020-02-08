@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>
+		Пример использования элементов списка определений для форматирования формы
+	</title>
+</head>
+<body leftmargin=100 rightmargin=100 text="#78bed0" bgcolor=#112232>
+	<h2 align=center> Заполните небольшую анкету </h2>
+	<form>
+		<DL>
+			<fieldset>
+				<legend>
+					<i><font size=-1><b> Читали ли Вы Ф.М.Достоевского? </b></font></i>
+				</legend>
+				<dt><input type=radio id="q" name="dost" value="none" onclick="closedost.js">
+					<label for="q">Я не читал ни одного произведения Ф.М.Достоевского.</label>
+					<dt>
+						<input id="w" type=radio name="dost" value="yes" onclick="opendost.js" checked>
+						<label for="w">Я читал произведения Ф.М.Достоевского.</label>
+						<dt>
+							<input id="e" type=radio name="dost" value="yes0" onclick="opendost.js" checked>
+							<label id="e">Я читал произведения Ф.М.Достоевского. Далее укажите какие именно:</label>
+							<dd><input id="r" type=checkbox name="Idiot" value="yes">
+								<label for="r">"Идиот"</label>
+								<dd><input id="t" type=checkbox name="Karamazov" value="yes">
+								<label for="t">"Братья Карамазовы"</label>
+								<dd><input id="y" type=checkbox name="Poor_people" value="yes">
+								<label for="y">"Бедные люди"</label>
+								<dd><input id="u" type=checkbox name="Bes" value="yes">
+								<label for="u">"Бесы"</label>
+								<dd><input id="i" type=checkbox name="Crime" value="yes">
+								<label for="i">"Преступление и наказание"</label>
+								<dd><input id="o" type=checkbox name="Write_night" value="yes">
+								<label for="o">"Белые ночи"</label>
+								<dd><input id="p" type=checkbox name="Junior" value="yes">
+								<label for="p">"Подросток"</label>
+							</fieldset>
+							<fieldset>
+								<legend>
+									<i><font size=-1><b> Читали ли Вы И.С.Тургенева </b></font></i>
+								</legend>
+								<dt>
+									<input id="a" type=radio name="turg" value="none" onclick="closeturg.js" checked> <label for="a">Я не читал ни одного произведения И.С.Тургенева.</label>
+									<dt><input id="s" type=radio name="turg" value="yes" onclick="opeturg.js"><label for="s"> Я читал произведения И.С.Тургенева. Далее укажите какие именно:</label>
+										<dd><input id="d" type=checkbox name="Slip" value="yes">
+											<label for="d">"Записки охотника"</label>
+											<dd><input id="f" type=checkbox name="Fathers" value="yes">
+											<label for="f">"Отцы и дети"</label>
+											<dd><input id="g" type=checkbox name="Mumu" value="yes">
+											<labeL for="g">"Муму"</labeL>
+											<dd><input id="h" type=checkbox name="Jack" value="yes">
+											<label for="h">"Дворянское гнездо"</label>
+											<dd><input id="j" type=checkbox name="Rudin" value="yes">
+											<label for="j">"Рудин"</label>
+											<dd><input id="k" type=checkbox name="Acja" value="yes">
+											<label for="k">"Ася"</label>
+										</fieldset>
+										<input type=submit>
+									</form>
+								</body>
+								</html>
