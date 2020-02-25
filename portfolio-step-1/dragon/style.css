@@ -85,6 +85,7 @@ a {
   background-position: 470px 50%;
   background-size: 800px;
   background-repeat: no-repeat;
+  filter: blur(3px);
 }
 
 .subheading {
@@ -273,4 +274,7 @@ visibility: visible;
 }
 .bot5 {
   padding-left: 35px;
+}
+.tab{
+  filter: blur 50px;
 }
