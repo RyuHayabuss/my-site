@@ -258,6 +258,7 @@ visibility: visible;
 }
 .bot1 {
   border-radius: 50%;
+  
 }
 .bot2 {
   border-radius: 50%;
@@ -277,5 +278,5 @@ visibility: visible;
   padding-left: 35px;
 }
 .tab{
- 
+ filter: drop-shadow(30px 10px 4px #000000);
 }
