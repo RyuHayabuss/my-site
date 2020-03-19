@@ -1,0 +1,103 @@
+li:nth-child(odd){
+			background-color:black;
+			color:white;
+			width: 500px;
+		}
+		a {
+			text-decoration:none;
+			color:black;
+		}
+		
+		
+		@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+}
+
+.loading-button {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    background: lightslategrey;
+    border-radius: 2px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 50px;
+}
+div {
+   background: lightgrey;
+   padding: 1rem;
+   width: 400px;
+ }
+ 
+ div p {
+   color: grey;
+   margin-top: 0;
+ }
+ 
+ .bit {
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 1s;
+}
+ 
+ div:hover a {
+   background: red;
+ }
+ 
+ .bit1 {
+ 	background: blue;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 1s;
+   transition-delay: 1s;
+ }
+ @keyframes around {
+ 	0% { left: 0; top: 0; }
+ 	25% { left: 240px; top: 0; }
+ 	50% { left: 240px; top: 35px; }
+ 	75% { left: 0; top: 35px; }
+ 	100% { left: 0; top: 0;}
+ }
+ .bit2 {
+ 	animation: around 4s linear 0s infinite;
+ 	background: black;
+ 	display: inline;
+ 	color: white;
+ 	height: 60px;
+ 	line-height: 60px;
+ 	margin: 0;
+ 	position: relative;
+ 	text-align: center;
+ 	width: 60px;
+
+ }
+ @keyframes just-lift {
+ 	0% { left: 0; top: 0; }
+ 	25% { left: 0; top: 35px; }
+ 	50% { left: 240px; top: 35px; }
+ 	75% { left: 240px; top: 0; }
+ 	100% { left: 0; top: 0;}
+ }
+ .bit3 {
+ 	animation: just-lift 4s linear 0s infinite;
+ 	background: black;
+ 	display: inline;
+ 	color: white;
+ 	height: 60px;
+ 	line-height: 60px;
+ 	margin: 180px;
+ 	position: relative;
+ 	text-align: center;
+ 	width: 60px;
+ }
