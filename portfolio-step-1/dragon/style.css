@@ -256,6 +256,19 @@ visibility: visible;
   border-radius: 90%;
   filter: opacity(50%);
 }
+@keyframes lincoln {
+  0% {left: 0; bottom: 50px;}
+  25% {left: 0; bottom:790px;}
+  50% {left: 1650px; bottom: 790px;}
+  75% { left: 1650px; bottom: 50px; }
+  100% { left:0; bottom: 50px; }
+}
+.bit {
+animation: lincoln 4s linear 0s infinite;
+position: fixed;
+bottom: 85px;
+}
+
 .bot1 {
   border-radius: 50%;
   
