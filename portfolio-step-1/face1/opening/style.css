@@ -5,7 +5,7 @@ li:nth-child(odd){
 		}
 		a {
 			text-decoration:none;
-			color:black;
+			color:white;
 		}
 		
 		
@@ -101,3 +101,4 @@ div {
  	text-align: center;
  	width: 60px;
  }
+ 
