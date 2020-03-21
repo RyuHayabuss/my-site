@@ -268,7 +268,19 @@ animation: lincoln 4s linear 0s infinite;
 position: fixed;
 bottom: 85px;
 }
-
+@keyframes marginal {
+  0% {right: 0; bottom: 790px;}
+  25%{right: 1650px; bottom: 790px;}
+  50%{right: 1650px; bottom: 50px;}
+  75%{right: 0; bottom: 50px;}
+  100%{right: 0; bottom: 790px;}
+}
+.bit1 {
+  animation: marginal 4s linear 0s infinite;
+  position:fixed;
+  bottom:560px;
+  right:0px
+}
 .bot1 {
   border-radius: 50%;
   
