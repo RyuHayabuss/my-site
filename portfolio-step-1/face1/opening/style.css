@@ -92,7 +92,7 @@ div {
  .bit3 {
  	animation: just-lift 4s linear 0s infinite;
  	background: black;
- 	display: inline;
+ 	
  	color: white;
  	height: 60px;
  	line-height: 60px;
@@ -100,5 +100,30 @@ div {
  	position: relative;
  	text-align: center;
  	width: 60px;
+ 	display: inline;
+
  }
- 
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ .bit4 {
+  animation: rotating 4s linear 0s infinite;
+  background: slateblue;
+  border-radius: 60px;
+  color: white;
+  height: 120px;
+  line-height: 120px;
+  margin: 0;
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  top: 1195px;
+  left: 600px;
+}
+
