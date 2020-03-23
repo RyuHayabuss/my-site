@@ -3,9 +3,81 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Пример Web-страницы</title>
+	<style>
+		a { background: lightgrey;
+		color: grey; }
+		a:hover { background: yellow;
+		border: 5px solid blue; color: black; }
+		a.with-background-transition {transition-duration: 2s; transition-property: background;}
+		a.with-all-transition { transition: 2s; }
+		div {
+  left: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  transition: 1s;
+}
+
+main:hover div {
+  left: 300px;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+div:nth-child(2) {
+  background: crimson;
+}
+
+div:nth-child(4) {
+  background: midnightblue;
+}
+
+div:nth-child(6) {
+  background: mediumseagreen;
+}
+
+div:nth-child(8) {
+  background: orangered;
+}
+
+div:nth-child(10) {
+  background: darkviolet;
+}
+	</style>
 </head>
 <body>
 	<h1>Справочник по HTML</h1>
-	<p>Приветствуем на нашем Web-сайте всех, кто занимается <em><strong>Web-дизайном</strong></em>! Здесь вы сможете найти информацию обо всех интернет технологиях, применяемых при создании Web-страниц. В частности, о языке <strong>HTML</strong></p>
+	<p>Приветствуем на нашем Web-сайте всех, кто занимается <em><strong>Web-дизайном</strong></em>! Здесь вы сможете найти информацию обо всех интернет технологиях, применяемых при создании <a>Web-страниц</a>. В частности, о языке <strong>HTML</strong></p>
+	<main>
+  <p><strong>ease</strong>: медленно начинается, быстро в середине, медленно завершается</p>
+  <div class="ease"></div>
+  <p><strong>linear</strong>: постоянная скорость</p>
+  <div class="linear"></div>
+  <p><strong>ease-in</strong>: медленно начинается, быстро завершается</p>
+  <div class="ease-in"></div>
+  <p><strong>ease-out</strong>: быстро начинается, медленно завершается</p>
+  <div class="ease-out"></div>
+  <p><strong>ease-in-out</strong>: похоже на ease, но с более выраженным ускорением/замедлением</p>
+  <div class="ease-in-out"></div>
+</main>
 </body>
 </html>
