@@ -265,6 +265,7 @@ visibility: visible;
 }
 .bit {
 animation: lincoln 4s linear 0s infinite;
+animation-delay: 10s;
 position: fixed;
 bottom: 85px;
 }
@@ -277,6 +278,7 @@ bottom: 85px;
 }
 .bit1 {
   animation: marginal 4s linear 0s infinite;
+  animation-delay: 10s;
   position:fixed;
   bottom:560px;
   right:0px
