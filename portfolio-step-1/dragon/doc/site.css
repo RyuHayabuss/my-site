@@ -56,13 +56,17 @@ background-color: lightgray;
 	position:relative;
 	top: 600px;
 	break-after: always;
+	left: 75px;
+}
+video {
+	width: 100%;
 }
 .rts {
 	display: inline-block;
-	width: 530px;
+	width: 29.23%;
 	box-shadow: 2mm -2mm 2px  gray;
 	border-radius: 10px;
-	padding:8px;
+	padding: 8px;
 	background-color: #C0C0C0;
 }
 .restart {

@@ -2,6 +2,7 @@ body {
 	background-color:  #F8F8F8;
 	color: #3b4043;
 	font-family: verdana, arial, sans-serif;
+	width:1300px;
 }
 p {
 	font-size: 12pt;
@@ -19,6 +20,8 @@ font-size: 20pt;
 }
 #nyv {
 	float: left;
+	
+	position:relative;
 }
 h2 {
 font-size: 18pt;
@@ -53,7 +56,8 @@ ul {
 	font-size: 14pt;
 	list-style-type: none;
 	text-transform: uppercase;
-	float:left;
+	width: 45%;
+    /*float:left;*/
 }
 #navbar li {
 	padding: 5px 10px;
@@ -80,18 +84,21 @@ text-align: center;
 width: 100%;
 }
 #cnavbar {
-width: 780px;
+width: 50%;
 height: 620px;
 min-width: 240px;
 overflow-x: hidden;
 float: left;
+position:relative;
 }
 
 #cmain {
-width: 780px;
+	position:relative;
+width: 50%;
 float: right;
 height: 620px;
 overflow: auto;
+left: 100px;
 }
 #ccopyright {
 clear: both;
@@ -203,8 +210,8 @@ li::before {
 	display: inline-block;
 	position:relative;
 	top: 600px; 
-	width: 450px;
-	height: 350px;
+	width: 250px;
+	height: 200px;
 	padding: 30px;
 	left: 50px;
 	/*outline-style: double;
@@ -357,3 +364,7 @@ li::before {
 	voice-family: female, neutral;
 	voice-duration: 10s;
 }
+/*.uu1 {
+	left:26%;
+	
+}*/
