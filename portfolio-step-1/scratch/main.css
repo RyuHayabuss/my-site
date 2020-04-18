@@ -1,0 +1,459 @@
+body {
+    /*background-color: rgba(50,0,0,1);*/
+    font-size: 100%;
+    font-family:"Archer Medium", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    background: #f3f3e8;
+    color: #51463d;
+}
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color:#3792b3;
+}
+*html ul.lst li,
+*html ul.lst li a {
+    height: 1%;
+}
+ul.lst li{
+    margin: 0 0 2px 0;
+    position: relative;
+}
+ul.lst li a {
+   position: relative;
+    display: block;
+    padding: 7px;
+    z-index: 2;
+    color: #76a65c;
+    color: rgba(118,166,92,.75);
+    /*border-bottom: 1px solid #f3f2e8;
+    overflow: hidden;*/
+    }
+ul.lst li a strong {
+    display: block;
+    color: #76a65c;
+}
+ul.lst li em {
+    /*position: absolute;*/
+    /*top: 7px;*/
+    /*right: 7px;*/
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    color: #9c836e;
+
+}
+ul.lst li span {
+    /*float:left;
+    width: 75%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    line-height: 2.55em;
+    text-indent: -9999px;
+    background: #f3f2e8;
+}
+ul.lst li:hover span {
+    background: #ecebe1;
+}
+ul.lst {
+    width: 250px;
+}
+table tr th {
+    width: 200px;
+    text-align: left;
+}
+table tr td {
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+}
+table {
+    border-width: 0px;
+}
+.box {
+    Position: absolute;
+    padding: 15px;
+    background: #e2e1d4;
+    border-radius: 8px;
+    width: 214px;
+    height: 147px;
+    left: 450px;
+    top: 300px;
+}
+/*.box:hover {
+    transition: 4s linear;
+    transform: rotate(360deg);
+    height: 0px;
+    width: 0px;
+}*/
+.box img:hover {
+    transition: 4s linear;
+    transform: rotate(360deg);
+    height: 0px;
+    width: 0px;
+}
+.box img {
+    background: #e2e1d4;
+    width: 200px;
+    height: 133px;
+    position:relative;
+    margin: 7px;
+    border-radius: 5px;
+    transition: 2s;
+}
+div.more-btn a {
+    padding: 6px 14px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    color: #777;
+    border: 1px solid #ccc;
+    background: #ccc url(img/qwerty.png-24.png) repeat-x 0 50%;
+    border-radius: 14px;
+    border: 1px solid #3792b3;
+}
+div.more-btn a:hover {
+    background-color: #a14141;
+}
+div.more-btn1 a {
+    position:relative;
+    left: 200px;
+    bottom:  20px;
+    padding: 5px 14px;
+    color:#3792b3;
+    background: #fff;
+    border-radius: 5px;
+    border: 5px solid #e2e1d4;
+}
+#comment-form fieldset {
+    margin: 0 0 15px 0;
+    width:410px;
+}
+#comment-form fieldset label {
+    display: block;
+    margin: 0 0 3px 0;
+    font-weight: bold;
+}
+#comment-form fieldset input,
+#comment-form fieldset textarea {
+    width: 400px;
+    padding: 5px;
+    font-size: 1.4em;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-radius: 5px;
+    background: #e2e1d7 url(img/giphy.gif) repeat-x top left;
+}
+#comment-form fieldset input:focus,
+#comment-form fieldset textarea:focus {
+    background: #fff;
+}
+.coupon {
+    padding: 1em;
+    background: #3792b3;
+    border-radius: 1em;
+    background: rgba(55,146,179,.25);
+}
+.coupon p {
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #a14141;
+}
+#ferrum {
+    position: absolute;
+    left: 350px;
+    top: 500px;
+}
+#llst {
+    position: absolute;
+    left: 800px;
+    top: 280px;
+}
+ol.specials li {
+    float:left;
+    margin: 0 15px 1.5em 0;
+    width: 240px;
+}
+ol.specials li div.special {
+    position: relative;
+    background: #e2e1d4;
+    border: 15px solid #e2e1d4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+ol.specials li div.special a span {
+    display:block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.3em;
+    color: #ccc;
+    background: #333;
+    background: rgba(0,0,0,.4);
+}
+ol.specials li div.special a span strong {
+    display: block;
+    padding: 10px 10px 0 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff;
+}
+ol.specials li div.special a span em {
+    display: block;
+    padding: 0 10px 10px 10px;
+    font-style: normal;
+    color: #e3c887;
+}
+#hydrogen {
+    position: absolute;
+    left: 500px;
+    top: 1300px;
+    border-radius: 15px;
+    transition-property: background-color;
+    transition-duration: 8s;
+    transition-timing-function: linear;
+}
+#hydrogen:hover {
+    background-color: lightgray;
+    border-radius: 15px;
+}
+#nav {
+    position:relative;
+    height: 250px;
+}
+#nav ul li  {
+    text-shadow: 0 -1px 0 rgba(0,0,0,.7);
+    border-radius: 5px;
+
+}
+#nav li:hover {
+    background: #000;
+    background: rgba(0,0,0,.65);
+    border-radius: 5px;
+}
+#nav li {
+  transition-property: background-color;
+    transition-duration: .8s;
+    transition-timing-function: linear;
+    position: relative;
+    height: 50px;
+    text-align: center;
+    width: 150px;
+    display:inline-block;
+}
+a:link, a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    color: #3792b3;
+    transition: color 2s linear;
+}
+a:hover {
+    color: rgba(55,146,179,.65);
+}
+div.box1 {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+div.box1 img {
+    width: 25%;
+    margin: 7px;
+    border-radius: 5px;
+}
+div.box1 p.description {
+    float: right;
+    width: 70%;
+}
+div.entry h3 {
+    font: normal 1.4375em/1.3 Georgia, serif;
+    /* 23px / 16px = 1.4375em */
+}
+div.entry-body {
+    font-size: 0.8125em;
+    /* 13px / 16px = 0.8125 */
+    line-height: 1.6;
+}
+span.amp {
+    font: normal 1.2em Baskerville, "Goudy Old Style",
+    "Palatino", "Book Antiqua", serif;
+    font-style: italic;
+    color: #766557;
+}
+#wrap {
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    max-width: 62.5em;
+}
+.main {
+    float:left;
+    width: 63%;
+}
+.secondary {
+    float: right;
+    width: 35%;
+}
+/* Поскольку в  макете размер элемента .main равен 730 пикселам, мы, таким образом, знаем значение контекста. А так как
+мы хотим выразить ширину элемента ul.entry-meta (225px)
+в  процентах относительно 730px, мы опять возвращаемся
+к старой формуле.
+225 ÷ 730 = 0.30822
+Получаем значение 0,30822 (или 30,822%). А как насчет элемента div.entry-body, который в макете имеет ширину 460px?
+460 ÷ 730 = 0.63014
+Ну вот: ширина элемента div.entry-body составляет 63,014%
+от ширины его контейнера div.main. Без особых церемоний
+(и  без дополнительного деления) добавим эти значения в  таблицы стилей. */
+div.entry ul.enrty-meta {
+    float: left;
+    width: 30.822%;
+}
+div.entry-body {
+    float: right;
+    width: 63.014%;
+    font-size: 1em;
+    line-height: 1.6;
+}
+img,
+object {
+    max-width: 100%;
+}
+span.amp {
+    font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Archer Medium";
+    src: url(fonts/ARCHER.ttf) format("opentype");
+}
+ul.press li {
+    margin: 1em 0;
+    padding: 0 0 1em 0;
+    border-bottom: 1px solid #e2e1d4;
+}
+ul.press li blockquote {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+ul.press li blockquote p {
+   margin: 0 0 1em 0;
+}
+ul.press li blockquote p.author {
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    text-align: right;
+    color: #9c836e;
+}
+ul.press li blockquote p.author a {
+    font-weight: bold;
+}
+ul.press li.last {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.lst2 {
+    position: relative;
+    float: right;
+    width: 100%;
+    /*left: 500px;
+    bottom: 250px;*/
+}
+ul.lst2 li{
+    margin: 0 0 2px 0;
+    position: relative;
+}
+ul.lst2 li a {
+    position: relative;
+    display: block;
+    padding: 7px;
+    z-index: 2;
+    color: #76a65c;
+    color: rgba(118,166,92,.75);
+    /*border-bottom: 1px solid #f3f2e8;
+    overflow: hidden;*/
+}
+ul.lst2 li a strong {
+    display: block;
+    color: #76a65c;
+}
+ul.lst2 li em {
+    /*position: absolute;*/
+    /*top: 7px;*/
+    /*right: 7px;*/
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    color: #9c836e;
+
+}
+ul.lst2 li span {
+    /*float:left;
+    width: 75%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    line-height: 2.55em;
+    text-indent: -9999px;
+    background: #f3f2e8;
+}
+ul.lst2 li:hover span {
+    background: #ecebe1;
+}
+#footer {
+    position: relative;
+    top: 550px;
+    left: 50px;
+    text-align: right;
+}
+ul.press li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+#nav1 {
+    position: relative;
+    height: 130px;
+    left: 880px;
+    top: 450px;
+    width: 15%;
+}
+#header {
+    border-bottom: 1px solid #fff;
+    background: #766557 url(img/1200px-Изображение_верблюда.jpg) repeat-x 80% 100%;
+}
+#header-inner {
+    padding: 70px 0 0 0;
+    background: url(img/cat-1002850_960_720.jpg) repeat-x -80% 0;
+}
+#helium {
+
+}
+/*.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}*/
+
+/* классы для очистки блоков*/
+
+/*div.box::after,
+#header::after,
+#nav::after {
+    content: ".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}*/
