@@ -48,6 +48,11 @@
 .bot {
 	background-image: url("img/cherep_kapyushon_uzhasy_1606.jpg")
 }
+		#myButton {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
 .bot1 {
 background-image: url("img/avatarko_anonim.jpg")
 
@@ -97,6 +102,35 @@ div a.hydrogen {
         while (Word != "umbrella");
         prompt("ERROR");
       /* alert("FINE"); */
+	function swapImage(imgToSwap) {
+		imgToSwap.src = "img/giphy.gif";
+		imgToSwap.alt = "Указатель над кнопкой!";
+	}
+	function swapBack(imgToSwap) {
+		imgToSwap.src = "img/giphy (1).gif";
+		imgToSwap.alt = "Наведите на меня указатель!";
+	}
+	window.addEventListener('load',initialize,false);
+
+	function initialize() {
+		document.getElementById("myButton").addEventListener('click',function(e) {
+			var left = window.getComputedStyle(e.target).getPropertyValue("top");
+			left = parseInt(left, 10);
+			moveSquare(left,100);
+		}, false)
+	}
+
+	function moveSquare(left,numMoves) {
+		document.getElementById("myButton").style.top = left+"px";
+
+		if (numMoves > 0) {
+			numMoves--;
+			left++;
+			setTimeout(moveSquare,10,left,numMoves);
+		} else {
+			return;
+		}
+	}
     </script>
 	<title>Команда "Победители"</title>
 	<!--<meta http-equiv="refresh" content="15; url=dragon/index.html">-->
@@ -142,6 +176,7 @@ div a.hydrogen {
 	<div id="Helium">
 		<a class="hydrogen" href="scratch/index.html">Lithium</a><a class="hydrogen" href="dragon/index.html">Beryllium</a><a class="hydrogen" href="dragon/doc/index.html">Borum</a>
 	</div>
+	<img src="img/logo.gif" id="myButton" onmouseover="swapImage(this);" onmouseout="swapBack(this);"alt="Наведите на меня указатель!">
 <script >
 	Ext.onReady(function() {
  var ceLinks = Ext.select("UL[id=navbar] LI");
