@@ -94,6 +94,7 @@ div a.hydrogen {
 		}
 	</style>
     <script>
+
     var Password = prompt ("PROFILE");
         while (Password != "Albert Wesker") {
             prompt("ERROR");
@@ -131,6 +132,23 @@ div a.hydrogen {
 			return;
 		}
 	}
+       window.addEventListener("load",registerEvents,false);
+        function registerEvents(e) {
+            document.getElementById("ask").addEventListener("click",findAnswer,false);
+        }
+        
+        function findAnswer() {
+            var question = document.getElementById("virus").value;
+            var re = new RegExp("G-virus");
+            
+            if (re.test(question)===true) {
+                document.getElementById("answer").innerHTML = "BIOHAZARD";
+                console.log("G-virus!");
+            }
+            
+            
+        
+        }
     </script>
 	<title>Команда "Победители"</title>
 	<!--<meta http-equiv="refresh" content="15; url=dragon/index.html">-->
@@ -151,7 +169,9 @@ div a.hydrogen {
 </section>
 <section>
 <h2>Елизавета</h2>
-<textarea style="color: #708090" class="bot1" cols=45 rows=13>Окончила Санкт-Петербургский политехнический унивеситет по напрвлению "Графический дизайн". После знакомства с Петром стала активно интересоваться промышленным дизайном.</textarea>
+<textarea id="virus" style="color: #708090" class="bot1" cols=45 rows=13>Окончила Санкт-Петербургский политехнический унивеситет по напрвлению "Графический дизайн". После знакомства с Петром стала активно интересоваться промышленным дизайном.</textarea>
+    <button id="ask" type="button">Push</button>
+    <div id="answer" style="color:red"></div>
 </section>
 <a href="https://www.youtube.com/watch?v=e4eykXId8bs" accesskey="z"></a>
 <section>
@@ -159,7 +179,7 @@ div a.hydrogen {
 <textarea style="color: #708090" class="bot2" cols=31 rows=13>Отвечает за программирование роботов.</textarea>
 </section>
 <p><a href="menu/index.html" class="button">MENU</a></p>
-<p class="ssyl"><a href="https://www.youtube.com/watch?v=Loj0rXZN_Vs"> <u>Ссылка</a> на направление <a href="video/index.html">TechRussia</u> </a></p>
+<p class="ssyl"><a href="https://www.youtube.com/watch?v=Loj0rXZN_Vs"> Ссылка</a> на направление <a href="video/index.html">TechRussia </a></p>
 <div id="cite"> "Мы живём в <a href="https://www.youtube.com/watch?v=hEdAGOjXXOA" color=#45525b style="color:#45525b">эпоху</a>, когда расстояние от самых безумных фантазий до совершенно реальной действительности сокращается с невероятной быстротой." Максим Горький </div>
 <footer>
 	<form action="mailto:partners@a-techevent.ru" method="post" enctype="text/plain">
@@ -189,5 +209,6 @@ div a.hydrogen {
 });
 
 </script>
+    
 </body>
 </html>
