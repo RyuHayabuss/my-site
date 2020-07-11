@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
 	<script src="ext-all.js">
 	</script>
 	<style type="text/css">
@@ -52,7 +53,6 @@
         }
 		@media print{body{color:black;}}
 		h1{color:red;
-			
 			text-align:center}
 			#cite{text-align:right; color:#45525b; font-style:italic}
 			p.ssyl{text-align:center}
@@ -78,9 +78,22 @@
 			left: 0px;
 		}
 .bot1 {
-background-image: url("img/avatarko_anonim.jpg")
+background-image: url("img/avatarko_anonim.jpg");
 
 }
+        /*.bot3:focus {
+            background-image: url("img/earth_southern_hemisphere-wallpaper-7680x4320.jpg")
+        }*/
+        .bot:focus{
+            background-image: url("img/_54199-1812.jpg");
+        }
+        .bot1:focus{
+            background-image: url("img/0a41db8bd9fc26485c77517061045d461fa20c90v2_00.jpg");
+            color: red;
+        }
+        .bot2:focus{
+            background-image: url("img/game-of-thrones-dragon-drogon.jpg");
+        }
 .bot2 {
 	background-image: url("img/50569ac974c29121ff9075e45a334942.jpg")
 }
@@ -116,6 +129,26 @@ div a.hydrogen {
 			background: rgba(0,0,0,.65);
 			border-radius: 5px;
 		}
+        .finger {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            background-color: slategray;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+        body:target {
+             background-image: url("img/earth_southern_hemisphere-wallpaper-7680x4320.jpg");
+        }
+        @font-face {
+            font-family: "Spartan";
+            src: url(font/IndieFlower-Regular.ttf) format("opentype");
+        }
+        .beverage {
+            font-family: "Spartan";
+        }
 	</style>
     <script>
 
@@ -178,10 +211,11 @@ div a.hydrogen {
 	<!--<meta http-equiv="refresh" content="15; url=dragon/index.html">-->
 	<!--<base href="" target=frame_name>-->
 </head>
-<body class="bot3"  text=#78bed0 bgcolor=#112232 scroll=no link=#78bed0 vlink=#78bed0 alink=#78bed0>
+<body class="bot3" id="prison"  text=#78bed0 bgcolor=#112232 scroll=no link=#78bed0 vlink=#78bed0 alink=#78bed0>
 	<header>
 		<section>
-	<h1><a href="table/index.html" style="color:white">Информация о команде "Победители во всём!"</a></h1></section>
+	<h1><a href="table/index.html" style="color:white" class="beverage">
+Team information "UNSTOPPABLE!"</a></h1></section>
 </header>
 <h2><a style="color:black; text-shadow: black -1mm 1mm 4px" href="https://www.youtube.com/watch?v=PPD3ivNBPYg">Иван</a><br>
 <a style="color:black; text-shadow: black -1mm 1mm 4px" href="face1/index.html">Капитан команды</a></h2>
@@ -191,9 +225,9 @@ div a.hydrogen {
 <h2>Петр</h2>
 <div><p style="text-decoration:overline; color:#000000">Окончил МГТУ им. <a style="color:#000000" href="https://www.youtube.com/watch?v=KAkqLFAy0yE" onclick="alert('LEGENDARY');">Баумана</a> по специальности "Робототехника". <a style="color:#000000" href="https://www.youtube.com/watch?v=4xK8rCBoZxU">Им</a>еет огромный <a style="color:#000000"s href="https://www.youtube.com/watch?v=EsNTQ4HY1Vk">опыт</a> конструирования роботов.</p></div>
 </section>
-<section>
+<section id="virus">
 <h2>Елизавета</h2>
-<textarea id="virus" style="color: #708090" class="bot1" cols=45 rows=13>Окончила Санкт-Петербургский политехнический унивеситет по напрвлению "Графический дизайн". После знакомства с Петром стала активно интересоваться промышленным дизайном.</textarea>
+<textarea  style="color: #708090" class="bot1" cols=45 rows=13>Окончила Санкт-Петербургский политехнический унивеситет по напрвлению "Графический дизайн". После знакомства с Петром стала активно интересоваться промышленным дизайном.</textarea>
     <button id="ask" type="button">Push</button>
     <div id="answer" style="color:red"></div>
 </section>
@@ -203,6 +237,7 @@ div a.hydrogen {
 <textarea style="color: #708090" class="bot2" cols=31 rows=13>Отвечает за программирование роботов.</textarea>
 </section>
 <p><a href="menu/index.html" class="button">MENU</a></p>
+    <form><button class="finger"><a href="#prison">J</a></button></form>
 <p class="ssyl"><a href="https://www.youtube.com/watch?v=Loj0rXZN_Vs"> Ссылка</a> на направление <a href="video/index.html">TechRussia </a></p>
 <div id="cite"> "Мы живём в <a href="https://www.youtube.com/watch?v=hEdAGOjXXOA" color=#45525b style="color:#45525b">эпоху</a>, когда расстояние от самых безумных фантазий до совершенно реальной действительности сокращается с невероятной быстротой." Максим Горький </div>
 <footer>
