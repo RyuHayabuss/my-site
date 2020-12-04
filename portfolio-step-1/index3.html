@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Begin</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<!--<link href="css/normalize.css" rel="stylesheet">-->
+    <!--<link href="css/skeleton.css" rel="stylesheet">-->
+    
+    <link href="js/plugin ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="js/plugin ui/jquery-ui.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,Cyrillic"
+rel="stylesheet" type="text/css"> <!--добавляет Roboto - шрифт-->
+<link href="js/smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="js/smartmenus/sm-simple.css" rel="stylesheet">
+<link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"> // добавление библиотеки Jquery
+            </script>
+            <script src="js/old/jquery.min.js"></script>
+            
+    <script src="js/plugin ui/jquery-ui.min.js"></script>
+    <script src="js/plugin ui/jquery-ui.js"></script>
+    <script src="js/smartmenus/jquery.smartmenus.min.js"></script>
+    <script src=""></script>
+	<style>
+      @font-face {           /*правило, добавляющее внешние шрифты*/
+        font-family: Heroes;
+        src: url(font/ShadowsIntoLight-Regular.ttf); 
+      }  
+      h1, h2, p {
+        font-family: Heroes;
+      }
+      p {
+        margin-left: 10%;
+      }
+	/*@import url() []*; /*(адрес файла) [тип носителей]*/
+    
+        #main {
+            position: absolute;
+            left: 28%;
+            top: 1800px;
+            margin: 100px auto;
+            padding: 5px;
+            width: 660px;
+            height: 360px;
+            background-color: silver;
+            border: 5px solid grey;
+            border-radius: 15px;
+        }
+        #scr {
+            margin: 20px auto;
+            width: 600px;
+            height: 320px;
+            margin-top: 20px;
+            background-color: white;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        button {
+            position: absolute;
+            top: 150px;
+            width: 25px;
+            height: 70px;
+            font: 12pt, arial,tahoma,sans-serif;
+            text-align: center;
+        }
+        .left {
+            left: 5px;
+        }
+        .right {
+            right: 5px;
+        }
+        .carousel-item {
+            border: 1px solid black;
+            background: #EEEEEE;
+            font-size: 23px;
+            padding: 100px 20px;
+            text-align: center;
+            box-sizing: border-box;
+            cursor: grab;
+            position: relative;
+            height: 230px;
+            overflow: break-word;
+        }
+        .ferrum2 {
+            position: relative;
+            z-index: 100;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: black;
+        }
+        .opium {
+            width: 100px;
+            margin: auto;
+            height: 100px;
+            border-radius: 5px;
+            background-color: white;
+            border:double 5px black;
+            background-image: url(image/words_texture1965.jpg);
+        }
+        #scarlet {
+            left:150px;
+            top: 80px;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 3px;
+            border:solid 3ps black;
+            z-index:1;
+        }
+        #deathstroke {
+            left:152px;
+            top: 80px;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 3px;
+            border:solid 3ps black;
+            z-index:1;
+        }
+</style>
+
+            <script>
+               $(document).ready(function() {
+                
+           $('#begin').dialog({
+            modal: true,
+            hide: 'explode',   /*анимация закрытия*/
+            position: {
+                my: 'center top',  /*часть диалогового окна*/
+                at: 'center center'    /*положение в окне браузера*/
+             /* of: '#begin'      окно отображается непосредственно под элементом */
+            }
+           });
+          
+           $('[title]').tooltip({
+            show: true,
+            hide: 'explode',
+            track: true
+           });
+           
+            $('h1').tooltip({
+                content: '<img src="image/depositphotos_66606749-stock-photo-black-hand-of-death-the.png">',
+                hide: 'bounce'
+
+            });
+            $('#hot').tooltip({
+                hide: 'bounce',
+                content: $('#seldom').html()
+            });
+
+       $('.sm').smartmenus({
+    showFunction: function($ul, complete) {
+        $ul.slideDown(250, complete);    },
+    hideFunction: function($ul, complete) {
+        $ul.slideUp(250, complete);
+    }
+});
+                $('#buffalo').mouseover(function() {
+                     var message = "<p>I see it !!!</p>";
+                 $('#ready').append(message);
+                });
+                $('#bear').mouseover(function() {
+                      var message1 = "<p>It doesn't work so !!!</p>";
+                    $('#ready').append(message1);
+                })
+                $("html").dblclick(function() {
+                    var message2 = "<p>ERROR</p>";
+                    $('h2').append(message2);
+                    $('h2').css('color', 'red');
+                })
+                $('#dino').mouseover(function() {
+                     var message3 = "<p>These masks driving you mad !</p>";
+                     $('#ready').append(message3);
+                });
+                $('#crisis').mouseover(function() {
+                     var message6 = "<p>No excuses...</p>";
+                     $('#ready').append(message6);
+                })
+                $('#ready').dblclick(function() {
+                       $(this).fadeOut(6000);
+                });
+                $('#fox').hover(function() {
+                      var message4 = "<p>You're gonna hear my voice.</p>";                /* Give you a link? */
+                      $(this).append(message4);
+                },
+                   function(){
+                    $('p').fadeOut();
+                   }
+                );
+                $('#arctic').hover(function() {
+                    var message5 = "<p>Hello from me.</p>";
+                    $(this).append(message5);
+                },
+                   function() {
+                    $('p').fadeOut();
+                   }
+                );
+
+                $('form').submit(function(evt) {
+                    evt.preventDefault();
+                }); // конец submit
+                $('#dawn').click(function() {
+                      var $field = $('#dusk')
+                      var fieldval = $field.val();
+                      if (fieldval) {
+                       $('#morning').append('<li>' + fieldval + '</li>');
+                       $field.val('');
+                       $field.focus();  
+                      }
+
+                }); // конец click
+                $('#morning').on('click', 'li',function(){
+                      console.log($(this));
+                      $(this).css({
+                      'text-decoration': 'line-through',
+                      'font-weight': 'bold',
+                      'color': 'silver'
+                  }); // конец css
+                }); // конец on
+                $('#open').click(function(evt) {
+    evt.preventDefault();
+     $('#login form').slideToggle(300);
+     $(this).toggleClass('close');       
+ });
+     
+          
+
+            });
+            </script>
+            <script>
+              $(document).ready( function() {
+  
+    });  
+            </script>
+            <script>
+                var gen = prompt('Your name:', '');   // запрос на имя
+            </script>
+            <script>
+                var dayOfWeek = prompt('What day of the Week?', '');
+                if (dayOfWeek == 'Friday') {
+               var fridayCash = prompt('How many money do you ready to spend?', '');
+               if (fridayCash >= 500) {
+                  alert('You can go to the Theatre.');
+               } else if (fridayCash >= 1000) {
+                  alert('You can supper.');
+               } else if (fridayCash >= 1500) {
+                  alert('You can go to the Theatre and supper.');
+               } else {
+                  alert('You can not watch TV');
+               }
+               } 
+               if (dayOfWeek != 'Monday', 'Sunday', 'Tuesday', 'Wednesday', 'Thursday', 'Saturday') {
+                  alert('You can run to work !!!');
+               }
+               
+                function time() {
+                    var today = new Date;
+                    document.write(today.toDateString());
+                }
+
+            </script>
+            <script>
+                $(function() {
+        $('#main-menu').smartmenus({
+            subMenusSubOffsetX: 1,
+            subMenusSubOffsetY: -8
+        });
+    });
+                
+                var slider = {
+        slides:['02a41db898dcf14855710a1acb81d248.jpg','DSCN0013.jpg','DSCN9821.jpg'],
+        frame:0,
+        set: function(image) {
+            document.getElementById("scr").style.backgroundImage = "url("+image+")";
+        }, 
+        init: function() {
+            this.set(this.slides[this.frame]);
+        },
+        left: function() {
+            this.frame--;
+            if(this.frame < 0) this.frame = this.slides.length-1;
+            this.set(this.slides[this.frame]);
+        },
+        right: function() {
+            this.frame++;
+            if(this.frame == this.slides.length) this.frame = 0;
+            this.set(this.slides[this.frame]);
+        }
+    };
+        window.onload = function() {
+            slider.init();
+            setInterval(function() {
+                slider.right();
+            },5000);
+        };
+</script>
+    <script type="text/javascript">
+  $(document).ready(function() {
+     $('.ferrum2').click(function() {
+        $(this).addClass('opium'); 
+         $(this).removeClass('ferrum2');
+     }); 
+  });
+    </script>
+        </head>
+<body id="free">
+<div id="rep">
+     <div id="begin" title="Hell(o), my dear.">
+         <p>Give you a link?</p>
+     </div>
+     <nav class="main-nav">
+    <ul id="main-menu" class="sm sm-simple">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Circumstances</a>
+          <ul>
+             <li><a href="#">Job</a>
+              <ul>
+                <li><a href="#">Freelance</a></li>
+                <li><a href="#">Bookmaker</a></li>
+              </ul>
+             </li>
+             <li><a href="#">Building</a></li>
+             <li><a href="#">Psyche</a>
+             <li><a href="#">Dislocation</a>
+                <ul>
+                    <li><a href="#">Russian Federation</a>
+                    <ul>
+                        <li><a href="#">Bryansk</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Italy</a>
+                    <ul>
+                        <li><a href="#">Vatican City</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">United States of America</a>
+                                      </li>    
+                    <li><a href="#">Australia</a></li>
+                        <li><a href="#">Japan</a></li>
+          <li><a href="#">Israel</a></li>
+                    <li><a href="#">Greece</a>
+                    <ul>
+                        <li><a href="#">Rhodos</a></li>
+                        </ul>
+                    </li>    
+                </ul>                   
+             </li>
+             <li><a href="#">Health</a></li>
+             <li><a href="#">Study</a>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Jquery</a></li>
+            </ul>
+             </li>
+           </ul>
+        </li>
+        <li><a href="#">Dreams</a>
+          <ul>
+            <li><a href="#">Knowledge</a>
+               <ul>
+                   <li><a href="#">Programming Language</a></li>
+                   <li><a href="#">Language</a>
+                   <ul>
+                       <li><a href="#">English</a></li>
+                     <li><a href="#">Latin</a></li>
+                      <li><a href="#">Deutch</a></li>
+                      <li><a href="#">French</a></li>
+                      <li><a href="#">Japanese</a></li>
+                      <li><a href="#">Arabian</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">Robotics</a></li>
+                   <li><a href="#">Vehicle Equipment</a></li>
+                   <li><a href="#">Psychology</a></li>
+                   <li><a href="#">History</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Skills</a>
+                  <ul>
+                      <li><a href="#">Shooting</a></li>
+                      <li><a href="#">Surfing</a></li>
+                    <li><a href="#">Diving</a></li>
+                      <li><a href="#">Golf</a></li>
+                      <li><a href="#">Fencing</a></li>
+                       <li><a href="#">Kayaking</a></li>
+                 <li><a href="#">Helicopter piloting</a></li>
+                      <li><a href="#">Skydiving</a></li>
+                     </ul>
+            </li>
+            <li><a href="#">Guns</a>
+                   <ul>
+                       <li><a href="#">Glock 17</a></li>
+                       <li><a href="#">AR-15</a></li>
+                       <li><a href="#">FR-F2</a></li>
+                       <li><a href="#">MP5SD</a></li>
+                       <li><a href="#">PP-19-01 Vityaz-SN</a></li>
+                   </ul>
+            </li>
+            <li><a href="#">Transports</a>
+                <ul>
+              <li><a href="#">Cars</a>
+                     <ul>
+              <li><a href="#">BMW E46 Restailing</a></li>
+                  </ul>
+                    </li>
+            </ul>
+            </li>
+            <li><a href="#">Emigration</a>
+               
+                <ul>
+                     <li><a href="#">USA</a></li>
+                     <li><a href="#">Israel</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li><a href="#">Canada</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Hellicopters</a></li>
+            <li><a href="#">Games</a>
+               <ul>
+                <li><a href="#">Pray 2</a></li>
+                <li><a href="#">Ninja Gaiden 4</a></li>
+                <li><a href="#">Risen 4</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Computer Peripherals</a>
+                <ul>
+                    <li><a href="#">SSD 1Tb</a></li>
+                    <li><a href="#">HDD 6Tb</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Reality</a>
+           <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Work</a></li>
+           </ul>
+        </li>
+    </ul>
+  </nav>
+    <h1 id="ready" title="!!!">Jakal</h1><script>
+    document.write('<p>Welcome, ' + gen + '</p>'); // вывод текста через JS
+</script>
+    
+    
+    <div class="ferrum2"></div>
+    <img src="image/tumblr_07e964c9f4f10a596a5691d9c03d1e1e_eb20a159_500.gif" id="scarlet" title="Finish Him!!!">
+    <img src="image/Deathstroke_(Snyder_Cut).png" id="deathstroke" title="Hello, My Love">
+	<div id="tall">
+	<ul id="vine">
+		<li class="arm"></li>
+		<li class="arm"></li>
+		<li class="arm"></li>
+		<li class="arm"></li>
+		<li class="arm"></li>
+		<li class="arm"></li>
+		<li class="arm"></li>
+		<li class="arm"></li>
+	</ul>
+	<ul id="hot" title="!!!">
+		<li class="ask"></li>
+		<li class="ask"></li>
+		<li class="ask"></li>
+		<li class="ask"></li>
+		<li class="ask"></li>
+		<li class="ask"></li>
+		<li class="ask"></li>
+		<li class="ask"></li>
+	</ul>
+	<ul id="cold">
+		<li class="water"></li>
+		<li class="water"></li>
+		<li class="water"></li>
+		<li class="water"></li>
+		<li class="water"></li>
+		<li class="water"></li>
+		<li class="water"></li>
+		<li class="water"></li>
+	</ul>
+</div>
+<div id="arctic"></div>	
+<div id="fox"></div>
+<div>
+    <form action="#" method="get">
+     <p><input type="textfield" id="dusk"><input type="button" id="dawn" value="Add a meaning"></p>
+    </form>
+    <h1>To do list</h1>
+    <ol id="morning" type="I">
+        
+    </ol>
+</div>
+<div id="do"><img id="ferrum" src="image/kak-vyvesti-pyatna-krovi-na-odezhde.png">
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+    <div class="act"><div class="fire"></div><div class="job"></div></div>
+</div>
+
+</div>
+<div id="login">
+    <a href="form.html"><p id="open">Login</p></a>
+    <form>
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <p>
+            <label for="password">Password: </label>
+            <input type="text" name="password" id="password">
+        </p>
+        <p class="button">
+            <input type="submit" name="button" id="button" value="Submit" >
+        </p>
+    </form>
+    </div>
+    
+<img src="image/morpheus-neo-the-matrix-youtube-red-pill-and-blue-pill-morpheus-pills.png" id="beard" title="I know you secret!">
+<img src="image/maskone.png" id="buffalo" title="Take off you mask...">
+<img src="image/Shadow-Warrior-Life-Size-Hojis-Mask-for-Cosplay-Papercraft.png" id="bear" title="We recognize them voices.">
+<img src="image/trish.png" id="dino" title="Where do you now?">
+<img src="image/jhfxkfjhbx.png" id="crisis" title="When do we start?">
+    <img src="image/zgfdgfz.png" id="three" title="Do you remember those times?">
+
+   <div id="main">
+        <button class="left" onclick="slider.left();"><</button>
+            <div id="scr"></div>
+            <button class="right" onclick="slider.right();">></button>
+       </div>
+<script id="seldom" type="text/template">
+        <p><img src="image/depositphotos_66606849-stock-photo-black-hand-of-death-the.png"></p>
+    </script>
+	</body>
+</html>
