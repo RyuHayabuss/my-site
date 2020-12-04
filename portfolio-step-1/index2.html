@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta churset="utf-8">    
+    <style>
+        body {
+            width: 100%;
+            background-color: lightgray;
+        }
+        #first {
+            width: 80%;
+            background-color: darkgray;
+            border-radius: 18px;
+           margin-top: 200px;
+           margin-left: auto;
+             margin-right: auto;
+            box-shadow: inset 0px 0px 8px 8px black;
+              position: relative;
+            width: 80%;
+          box-sizing: border-box;
+              height: 2500px;
+              background-position: center;
+        }
+        .carousel {
+            top: 3%;
+            left: 5%;
+  position: relative;
+  width: 1008px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: gray;
+}
+ 
+          .carousel img {
+  width: 200px;
+  height: 200px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+}
+        .arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+               .prev {
+            left: 7px;
+        }
+        .next {
+            right: 7px;
+        }
+        .gallery {
+  width: 1000px;
+  overflow: hidden;
+}
+
+        .gallery ul {
+  height: 230px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  font-size: 0;
+}
+        .gallery li {
+  display: inline-block;
+            border-radius: 3px;
+}
+        h2 {
+  font: bold 190%/100% sans-serif;
+  margin: 0 0 .2em;
+}
+
+h2 em {
+  font: normal 80%/100% sans-serif;
+  color: #999999;
+}
+
+#largeImg {
+  border: solid 1px #ccc;
+  width: 550px;
+  height: 400px;
+  padding: 5px;
+}
+
+#thumbs a {
+  border: solid 1px #ccc;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  margin: 2px;
+  float: left;
+}
+
+#thumbs a:hover {
+  border-color: #FF9900;
+}
+
+#thumbs li {
+  list-style: none;
+}
+
+#thumbs {
+  margin: 0;
+  padding: 0;
+}
+        a img {
+            height: 100px;
+            width: 100px;
+        }  
+        #second {
+            position: relative;
+            top: 5%;
+            left: 2%;
+        }
+    </style>
+    </head>
+<body>
+    
+    <div id="first">
+    
+    <div id="carousel" class="carousel">
+        <button class="arrow prev" >⇦</button>
+        <div class="gallery">
+        <ul class="images">
+            <li><a href="image/writing/20201003_225858.jpg"><img src="image/writing/20201003_225858.jpg"></a></li>
+            <li><a href="image/writing/20201003_230622.jpg"><img src="image/writing/20201003_230622.jpg"></a></li>
+            <li><a href="image/writing/20201006_234056.jpg"><img src="image/writing/20201006_234056.jpg"></a></li>
+            <li><a href="image/writing/20201010_090759.jpg"><img src="image/writing/20201010_090759.jpg"></a></li>
+            <li><a href="image/writing/20201018_200329.jpg"><img src="image/writing/20201018_200329.jpg"></a></li>
+            <li><a href="image/writing/20201019_230415.jpg"><img src="image/writing/20201019_230415.jpg"></a></li>
+            <li><a href="image/writing/20201019_230415.jpg"><img src="image/writing/20201019_230415.jpg"></a></li>
+            <li><a href="image/writing/20201022_231708.jpg"><img src="image/writing/20201022_231708.jpg"></a></li>
+            <li><a href="image/writing/20201022_232800.jpg"><img src="image/writing/20201022_232800.jpg"></a></li>
+            <li><a href="image/writing/20201023_224818.jpg"><img src="image/writing/20201023_224818.jpg"></a></li>
+            <li><a href="image/writing/20201023_231059.jpg"><img src="image/writing/20201023_231059.jpg"></a></li>
+            <li><a href="image/writing/20201023_232617.jpg"><img src="image/writing/20201023_232617.jpg"></a></li>
+            <li><a href="image/writing/20201024_231850.jpg"><img src="image/writing/20201024_231850.jpg"></a></li>
+            <li><a href="image/writing/20201025_233347.jpg"><img src="image/writing/20201025_233347.jpg"></a></li>
+            <li><a href="image/writing/20201026_001331.jpg"><img src="image/writing/20201026_001331.jpg"></a></li>
+            <li><a href="image/writing/20201027_225739.jpg"><img src="image/writing/20201027_225739.jpg"></a></li>
+            <li><a href="image/writing/20201027_230451.jpg"><img src="image/writing/20201027_230451.jpg"></a></li>
+            <li><a href="image/writing/20201027_230515.jpg"><img src="image/writing/20201027_230515.jpg"></a></li>
+            <li><a href="image/writing/20201030_144056.jpg"><img src="image/writing/20201030_144056.jpg"></a></li>
+            <li><a href="image/writing/20201030_144129.jpg"><img src="image/writing/20201030_144129.jpg"></a></li>
+            <li><a href="image/writing/20201030_150635.jpg"><img src="image/writing/20201030_150635.jpg"></a></li>
+            <li><a href="image/writing/20201031_225745.jpg"><img src="image/writing/20201031_225745.jpg"></a></li>
+            <li><a href="image/writing/20201103_112246.jpg"><img src="image/writing/20201103_112246.jpg"></a></li>
+            <li><a href="image/writing/20201103_114116.jpg"><img src="image/writing/20201103_114116.jpg"></a></li>
+            <li><a href="image/writing/20201103_114400.jpg"><img src="image/writing/20201103_114400.jpg"></a></li>
+            <li><a href="image/writing/20201103_115248.jpg"><img src="image/writing/20201103_115248.jpg"></a></li>
+            <li><a href="image/writing/20201103_120637.jpg"><img src="image/writing/20201103_120637.jpg"></a></li>
+            <li><a href="image/writing/20201103_120828.jpg"><img src="image/writing/20201103_120828.jpg"></a></li>
+            <li><a href="image/writing/20201103_121421.jpg"><img src="image/writing/20201103_121421.jpg"></a></li>
+            <li><a href="image/writing/20201103_121441.jpg"><img src="image/writing/20201103_121441.jpg"></a></li>
+            <li><a href="image/writing/20201103_122137.jpg"><img src="image/writing/20201103_122137.jpg"></a></li>
+            <li><a href="image/writing/20201103_122849.jpg"><img src="image/writing/20201103_122849.jpg"></a></li>
+            <li><a href="image/writing/20201103_123516.jpg"><img src="image/writing/20201103_123516.jpg"></a></li>
+            <li><a href="image/writing/20201103_125700.jpg"><img src="image/writing/20201103_125700.jpg"></a></li>
+            <li><a href="image/writing/20201103_131120.jpg"><img src="image/writing/20201103_131120.jpg"></a></li>
+            <li><a href="image/writing/20201103_131257.jpg"><img src="image/writing/20201103_131257.jpg"></a></li>
+            <li><a href="image/writing/20201103_131309.jpg"><img src="image/writing/20201103_131309.jpg"></a></li>
+            <li><a href="image/writing/20201103_131327.jpg"><img src="image/writing/20201103_131327.jpg"></a></li>
+            <li><a href="image/writing/20201104_225704.jpg"><img src="image/writing/20201104_225704.jpg"></a></li>
+            <li><a href="image/writing/20201104_225720.jpg"><img src="image/writing/20201104_225720.jpg"></a></li>
+            <li><a href="image/writing/20201104_230841.jpg"><img src="image/writing/20201104_230841.jpg"></a></li>
+            <li><a href="image/writing/20201104_231048.jpg"><img src="image/writing/20201104_231048.jpg"></a></li>
+            <li><a href="image/writing/20201107_232158.jpg"><img src="image/writing/20201107_232158.jpg"></a></li>
+            <li><a href="image/writing/20201107_232321.jpg"><img src="image/writing/20201107_232321.jpg"></a></li>
+            <li><a href="image/writing/20201107_232518.jpg"><img src="image/writing/20201107_232518.jpg"></a></li>
+        </ul>
+            </div>
+        <button class="arrow next">⇨</button>
+        </div>
+        
+        <div id="second">
+        
+        <p><img id="largeImg" src="https://static0.srcdn.com/wordpress/wp-content/uploads/2020/06/One-Piece-Marvel-Crossover.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5" alt="Large image"></p>
+            
+            <ul id="thumbs">
+            <li>
+                <a href="https://cdn.blocktoro.com/wp-content/uploads/2020/08/One-Piece-Chapter-988-Spoilers-Theories-Samurais-and-Minks-will-badly-injure-Kaido-the-Dragon.jpg" title="Image 2">
+                <img src="https://cdn.blocktoro.com/wp-content/uploads/2020/08/One-Piece-Chapter-988-Spoilers-Theories-Samurais-and-Minks-will-badly-injure-Kaido-the-Dragon.jpg"></a>
+                </li>
+            <li>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjtJdEuSdGjFKM7-Q89apvdozkLmHJ_Nn2Eg&usqp=CAU" title="Image 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjtJdEuSdGjFKM7-Q89apvdozkLmHJ_Nn2Eg&usqp=CAU"></a>
+                </li>
+                <li>
+                <a href="https://assets.puzzlefactory.pl/puzzle/225/914/original.jpg" title="Image 2">
+                <img src="https://assets.puzzlefactory.pl/puzzle/225/914/original.jpg"></a>
+                </li>
+                <li>
+                <a href="https://claystage.com/wp-content/uploads/one-piece-character-heights-768x432.jpg" title="Image 2">
+                <img src="https://claystage.com/wp-content/uploads/one-piece-character-heights-768x432.jpg"></a>
+                </li>
+                <li>
+                <a href="https://www.professionalwatches.com/wp-content/uploads/2020/07/G-Shock-One-Piece-GA-110JOP-close-up.jpg" title="Image 2">
+                <img src="https://www.professionalwatches.com/wp-content/uploads/2020/07/G-Shock-One-Piece-GA-110JOP-close-up.jpg"></a>
+                </li>
+            </ul>
+        
+        
+        </div>
+    </div>
+    <script>
+    thumbs.onclick = function(event) {
+        let thumbnail = event.target.closest('a');
+        
+        if (!thumbnail) return;
+        showThumbnail(thumbnail.href, thumbnail.title);
+        event.preventDefault();
+    }
+    
+    function showThumbnail(href, title) {
+        largeImg.src = href;
+        largeImg.alt = title;
+    }
+    </script>
+    <script>
+       /* этот код помечает картинки, для удобства разработки */
+    let i = 1;
+      for(let li of carousel.querySelectorAll('li')) {
+          li.style.position = 'relative';
+          li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+          i++;
+      }
+   
+/* конфигурация */
+      let width = 230; // ширина картинки
+      let count = 3;// видимое количество изображений
+      
+      let list = carousel.querySelector('ul');
+      let listElems = carousel.querySelectorAll('li');
+      let position = 0;// положение ленты прокрутки
+      carousel.querySelector('.prev').onclick = function() {
+          // сдвиг влево
+          position += width * count;
+          // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+          position = Math.min(position, 0)
+          list.style.marginLeft = position + 'px';
+      };
+      
+      carousel.querySelector('.next').onclick = function() {
+           // сдвиг вправо
+          position -= width * count;
+          // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+          position = Math.max(position, -width * (listElems.length - count));
+          list.style.marginLeft = position + 'px';
+      };
+      
+    
+    </script>
+    </body>
+</html>
