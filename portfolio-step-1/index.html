@@ -1,557 +1,275 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Begin</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<!--<link href="css/normalize.css" rel="stylesheet">-->
-    <!--<link href="css/skeleton.css" rel="stylesheet">-->
-    
-    <link href="js/plugin ui/jquery-ui.min.css" rel="stylesheet">
-    <link href="js/plugin ui/jquery-ui.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,Cyrillic"
-rel="stylesheet" type="text/css"> <!--добавляет Roboto - шрифт-->
-<link href="js/smartmenus/sm-core-css.css" rel="stylesheet">
-<link href="js/smartmenus/sm-simple.css" rel="stylesheet">
-<link href="" rel="stylesheet">
-    <link href="" rel="stylesheet">
-    <script src="js/jquery-3.5.1.js"> // добавление библиотеки Jquery
-            </script>
-            <script src="js/old/jquery.min.js"></script>
-            
-    <script src="js/plugin ui/jquery-ui.min.js"></script>
-    <script src="js/plugin ui/jquery-ui.js"></script>
-    <script src="js/smartmenus/jquery.smartmenus.min.js"></script>
-    <script src=""></script>
-	<style>
-      @font-face {           /*правило, добавляющее внешние шрифты*/
-        font-family: Heroes;
-        src: url(font/ShadowsIntoLight-Regular.ttf); 
-      }  
-      h1, h2, p {
-        font-family: Heroes;
-      }
-      p {
-        margin-left: 10%;
-      }
-	/*@import url() []*; /*(адрес файла) [тип носителей]*/
-    
-        #main {
-            position: absolute;
-            left: 28%;
-            top: 1800px;
-            margin: 100px auto;
-            padding: 5px;
-            width: 660px;
-            height: 360px;
-            background-color: silver;
-            border: 5px solid grey;
-            border-radius: 15px;
-        }
-        #scr {
-            margin: 20px auto;
-            width: 600px;
-            height: 320px;
-            margin-top: 20px;
-            background-color: white;
-            background-size: cover;
-            border: 2px solid black;
-            border-radius: 10px;
-        }
-        button {
-            position: absolute;
-            top: 150px;
-            width: 25px;
-            height: 70px;
-            font: 12pt, arial,tahoma,sans-serif;
-            text-align: center;
-        }
-        .left {
-            left: 5px;
-        }
-        .right {
-            right: 5px;
-        }
-        .carousel-item {
-            border: 1px solid black;
-            background: #EEEEEE;
-            font-size: 23px;
-            padding: 100px 20px;
-            text-align: center;
-            box-sizing: border-box;
-            cursor: grab;
-            position: relative;
-            height: 230px;
-            overflow: break-word;
-        }
-        .ferrum2 {
-            position: relative;
-            z-index: 100;
-            margin: auto;
-            width: 100px;
-            height: 100px;
-            border-radius: 5px;
+<html lang="de">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<script src="ext-all.js">
+	</script>
+	<style type="text/css">
+		h1{
+			opacity: 0.5;}
+			h2{ 
+				color:black;
+			opacity: 0.5;}
+				textarea{ cursor: url("img/IBeam.cur"), auto; }
+		@font-face {
+			font-family: "Archer Medium";
+			src: url(font/digitmono.ttf) format("opentype");
+		}
+		#Helium {
+			font-family: "Archer Medium";
+		}
+		p{margin-left:100px;
+		   margin-right:100px;
+		   margin-top:50px;
+		}
+		body{cursor: url("img/Handwriting.cur"), auto;
+			text-align:center;
+            background-color:#112232;
+            color:#78bed0;
+		}
+        textarea::selection{
+            color: white;
             background-color: black;
         }
-        .opium {
-            width: 100px;
-            margin: auto;
-            height: 100px;
-            border-radius: 5px;
-            background-color: white;
-            border:double 5px black;
-            background-image: url(image/words_texture1965.jpg);
+        h2::selection{
+            color: white;
+            background-color: black;
         }
-        #scarlet {
-            left:150px;
-            top: 80px;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            border-radius: 3px;
-            border:solid 3ps black;
-            z-index:1;
+        p::selection{
+            color: white;
+            background-color: black;
         }
-        #deathstroke {
-            left:152px;
-            top: 80px;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            border-radius: 3px;
-            border:solid 3ps black;
-            z-index:1;
+        h1::selection{
+            color: white;
+            background-color: black;
         }
-</style>
-
-            <script>
-               $(document).ready(function() {
-                
-           $('#begin').dialog({
-            modal: true,
-            hide: 'explode',   /*анимация закрытия*/
-            position: {
-                my: 'center top',  /*часть диалогового окна*/
-                at: 'center center'    /*положение в окне браузера*/
-             /* of: '#begin'      окно отображается непосредственно под элементом */
-            }
-           });
-          
-           $('[title]').tooltip({
-            show: true,
-            hide: 'explode',
-            track: true
-           });
-           
-            $('h1').tooltip({
-                content: '<img src="image/depositphotos_66606749-stock-photo-black-hand-of-death-the.png">',
-                hide: 'bounce'
-
-            });
-            $('#hot').tooltip({
-                hide: 'bounce',
-                content: $('#seldom').html()
-            });
-
-       $('.sm').smartmenus({
-    showFunction: function($ul, complete) {
-        $ul.slideDown(250, complete);    },
-    hideFunction: function($ul, complete) {
-        $ul.slideUp(250, complete);
-    }
-});
-                $('#buffalo').mouseover(function() {
-                     var message = "<p>I see it !!!</p>";
-                 $('#ready').append(message);
-                });
-                $('#bear').mouseover(function() {
-                      var message1 = "<p>It doesn't work so !!!</p>";
-                    $('#ready').append(message1);
-                })
-                $("html").dblclick(function() {
-                    var message2 = "<p>ERROR</p>";
-                    $('h2').append(message2);
-                    $('h2').css('color', 'red');
-                })
-                $('#dino').mouseover(function() {
-                     var message3 = "<p>These masks driving you mad !</p>";
-                     $('#ready').append(message3);
-                });
-                $('#crisis').mouseover(function() {
-                     var message6 = "<p>No excuses...</p>";
-                     $('#ready').append(message6);
-                })
-                $('#ready').dblclick(function() {
-                       $(this).fadeOut(6000);
-                });
-                $('#fox').hover(function() {
-                      var message4 = "<p>You're gonna hear my voice.</p>";                /* Give you a link? */
-                      $(this).append(message4);
-                },
-                   function(){
-                    $('p').fadeOut();
-                   }
-                );
-                $('#arctic').hover(function() {
-                    var message5 = "<p>Hello from me.</p>";
-                    $(this).append(message5);
-                },
-                   function() {
-                    $('p').fadeOut();
-                   }
-                );
-
-                $('form').submit(function(evt) {
-                    evt.preventDefault();
-                }); // конец submit
-                $('#dawn').click(function() {
-                      var $field = $('#dusk')
-                      var fieldval = $field.val();
-                      if (fieldval) {
-                       $('#morning').append('<li>' + fieldval + '</li>');
-                       $field.val('');
-                       $field.focus();  
-                      }
-
-                }); // конец click
-                $('#morning').on('click', 'li',function(){
-                      console.log($(this));
-                      $(this).css({
-                      'text-decoration': 'line-through',
-                      'font-weight': 'bold',
-                      'color': 'silver'
-                  }); // конец css
-                }); // конец on
-                $('#open').click(function(evt) {
-    evt.preventDefault();
-     $('#login form').slideToggle(300);
-     $(this).toggleClass('close');       
- });
-     
-          
-
-            });
-            </script>
-            <script>
-              $(document).ready( function() {
-  
-    });  
-            </script>
-            <script>
-                var gen = prompt('Your name:', '');   // запрос на имя
-            </script>
-            <script>
-                var dayOfWeek = prompt('What day of the Week?', '');
-                if (dayOfWeek == 'Friday') {
-               var fridayCash = prompt('How many money do you ready to spend?', '');
-               if (fridayCash >= 500) {
-                  alert('You can go to the Theatre.');
-               } else if (fridayCash >= 1000) {
-                  alert('You can supper.');
-               } else if (fridayCash >= 1500) {
-                  alert('You can go to the Theatre and supper.');
-               } else {
-                  alert('You can not watch TV');
-               }
-               } 
-               if (dayOfWeek != 'Monday', 'Sunday', 'Tuesday', 'Wednesday', 'Thursday', 'Saturday') {
-                  alert('You can run to work !!!');
-               }
-               
-                function time() {
-                    var today = new Date;
-                    document.write(today.toDateString());
-                }
-
-            </script>
-            <script>
-                $(function() {
-        $('#main-menu').smartmenus({
-            subMenusSubOffsetX: 1,
-            subMenusSubOffsetY: -8
-        });
-    });
-                
-                var slider = {
-        slides:['02a41db898dcf14855710a1acb81d248.jpg','DSCN0013.jpg','DSCN9821.jpg'],
-        frame:0,
-        set: function(image) {
-            document.getElementById("scr").style.backgroundImage = "url("+image+")";
-        }, 
-        init: function() {
-            this.set(this.slides[this.frame]);
-        },
-        left: function() {
-            this.frame--;
-            if(this.frame < 0) this.frame = this.slides.length-1;
-            this.set(this.slides[this.frame]);
-        },
-        right: function() {
-            this.frame++;
-            if(this.frame == this.slides.length) this.frame = 0;
-            this.set(this.slides[this.frame]);
+      div::selection{
+            color: white;
+            background-color: black;
         }
-    };
-        window.onload = function() {
-            slider.init();
-            setInterval(function() {
-                slider.right();
-            },5000);
-        };
-</script>
-    <script type="text/javascript">
-  $(document).ready(function() {
-     $('.ferrum2').click(function() {
-        $(this).addClass('opium'); 
-         $(this).removeClass('ferrum2');
-     }); 
-  });
-    </script>
-        </head>
-<body id="free">
-<div id="rep">
-     <div id="begin" title="Hell(o), my dear.">
-         <p>Give you a link?</p>
-     </div>
-     <nav class="main-nav">
-    <ul id="main-menu" class="sm sm-simple">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Circumstances</a>
-          <ul>
-             <li><a href="#">Job</a>
-              <ul>
-                <li><a href="#">Freelance</a></li>
-                <li><a href="#">Bookmaker</a></li>
-              </ul>
-             </li>
-             <li><a href="#">Building</a></li>
-             <li><a href="#">Psyche</a>
-             <li><a href="#">Dislocation</a>
-                <ul>
-                    <li><a href="#">Russian Federation</a>
-                    <ul>
-                        <li><a href="#">Bryansk</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Italy</a>
-                    <ul>
-                        <li><a href="#">Vatican City</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">United States of America</a>
-                                      </li>    
-                    <li><a href="#">Australia</a></li>
-                        <li><a href="#">Japan</a></li>
-          <li><a href="#">Israel</a></li>
-                    <li><a href="#">Greece</a>
-                    <ul>
-                        <li><a href="#">Rhodos</a></li>
-                        </ul>
-                    </li>    
-                </ul>                   
-             </li>
-             <li><a href="#">Health</a></li>
-             <li><a href="#">Study</a>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">Jquery</a></li>
-            </ul>
-             </li>
-           </ul>
-        </li>
-        <li><a href="#">Dreams</a>
-          <ul>
-            <li><a href="#">Knowledge</a>
-               <ul>
-                   <li><a href="#">Programming Language</a></li>
-                   <li><a href="#">Language</a>
-                   <ul>
-                       <li><a href="#">English</a></li>
-                     <li><a href="#">Latin</a></li>
-                      <li><a href="#">Deutch</a></li>
-                      <li><a href="#">French</a></li>
-                      <li><a href="#">Japanese</a></li>
-                      <li><a href="#">Arabian</a></li>
-                       </ul>
-                   </li>
-                   <li><a href="#">Robotics</a></li>
-                   <li><a href="#">Vehicle Equipment</a></li>
-                   <li><a href="#">Psychology</a></li>
-                   <li><a href="#">History</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Skills</a>
-                  <ul>
-                      <li><a href="#">Shooting</a></li>
-                      <li><a href="#">Surfing</a></li>
-                    <li><a href="#">Diving</a></li>
-                      <li><a href="#">Golf</a></li>
-                      <li><a href="#">Fencing</a></li>
-                       <li><a href="#">Kayaking</a></li>
-                 <li><a href="#">Helicopter piloting</a></li>
-                      <li><a href="#">Skydiving</a></li>
-                     </ul>
-            </li>
-            <li><a href="#">Guns</a>
-                   <ul>
-                       <li><a href="#">Glock 17</a></li>
-                       <li><a href="#">AR-15</a></li>
-                       <li><a href="#">FR-F2</a></li>
-                       <li><a href="#">MP5SD</a></li>
-                       <li><a href="#">PP-19-01 Vityaz-SN</a></li>
-                   </ul>
-            </li>
-            <li><a href="#">Transports</a>
-                <ul>
-              <li><a href="#">Cars</a>
-                     <ul>
-              <li><a href="#">BMW E46 Restailing</a></li>
-                  </ul>
-                    </li>
-            </ul>
-            </li>
-            <li><a href="#">Emigration</a>
-               
-                <ul>
-                     <li><a href="#">USA</a></li>
-                     <li><a href="#">Israel</a></li>
-                    <li><a href="#">Germany</a></li>
-                    <li><a href="#">Canada</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Hellicopters</a></li>
-            <li><a href="#">Games</a>
-               <ul>
-                <li><a href="#">Pray 2</a></li>
-                <li><a href="#">Ninja Gaiden 4</a></li>
-                <li><a href="#">Risen 4</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Computer Peripherals</a>
-                <ul>
-                    <li><a href="#">SSD 1Tb</a></li>
-                    <li><a href="#">HDD 6Tb</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#">Reality</a>
-           <ul>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Work</a></li>
-           </ul>
-        </li>
-    </ul>
-  </nav>
-    <h1 id="ready" title="!!!">Jakal</h1><script>
-    document.write('<p>Welcome, ' + gen + '</p>'); // вывод текста через JS
-</script>
+        a::selection{
+            color: white;
+            background-color: black;
+        }
+		@media print{body{color:black;}}
+		h1{color:red;
+			text-align:center}
+			#cite{text-align:right; color:#45525b; font-style:italic}
+			p.ssyl{text-align:center}
+			a{ cursor: url("cursor/Move.cur"), auto;
+				text-decoration: none
+			}
+			.button { cursor: url("cursor/Move.cur"), auto;
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #808080;
+  color: #ffffff;
+}
+.bot {
+	background-image: url("img/cherep_kapyushon_uzhasy_1606.jpg")
+}
+		#myButton {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+.bot1 {
+background-image: url("img/avatarko_anonim.jpg");
+
+}
+        /*.bot3:focus {
+            background-image: url("img/earth_southern_hemisphere-wallpaper-7680x4320.jpg")
+        }*/
+        .bot:focus{
+            background-image: url("img/_54199-1812.jpg");
+        }
+        .bot1:focus{
+            background-image: url("img/0a41db8bd9fc26485c77517061045d461fa20c90v2_00.jpg");
+            color: red;
+        }
+        .bot2:focus{
+            background-image: url("img/game-of-thrones-dragon-drogon.jpg");
+        }
+.bot2 {
+	background-image: url("img/50569ac974c29121ff9075e45a334942.jpg")
+}
+.bot3 {
+	background-image: url("img/flight-landscape-nature-sky-36717.jpg");
+	background-attachment: fixed;
+}
+.bot4 {
+	position: fixed; 
+	left: 0px; 
+	bottom: 0px;
+	color: slategray;
+}
+div a.hydrogen {
+	transition-property: background-color;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	position: relative;
+	height: 50px;
+	text-align: center;
+	width: 150px;
+	display:inline-block;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.7);
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 5px;
+	padding-top: 25px;
+	right: 500px;
+	color: rgba(250,250,250, 0.5);
+}
+
+		div a.hydrogen:hover {
+			background: #000;
+			background: rgba(0,0,0,.65);
+			border-radius: 5px;
+		}
+        .finger {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            background-color: slategray;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+        body:target {
+             background-image: url("img/earth_southern_hemisphere-wallpaper-7680x4320.jpg");
+        }
+        @font-face {
+            font-family: "Spartan";
+            src: url(font/IndieFlower-Regular.ttf) format("opentype");
+        }
+        .beverage {
+            font-family: "Spartan";
+        }
+	</style>
+    <script>
+
     
-    
-    <div class="ferrum2"></div>
-    <img src="image/tumblr_07e964c9f4f10a596a5691d9c03d1e1e_eb20a159_500.gif" id="scarlet" title="Finish Him!!!">
-    <img src="image/Deathstroke_(Snyder_Cut).png" id="deathstroke" title="Hello, My Love">
-	<div id="tall">
-	<ul id="vine">
-		<li class="arm"></li>
-		<li class="arm"></li>
-		<li class="arm"></li>
-		<li class="arm"></li>
-		<li class="arm"></li>
-		<li class="arm"></li>
-		<li class="arm"></li>
-		<li class="arm"></li>
-	</ul>
-	<ul id="hot" title="!!!">
-		<li class="ask"></li>
-		<li class="ask"></li>
-		<li class="ask"></li>
-		<li class="ask"></li>
-		<li class="ask"></li>
-		<li class="ask"></li>
-		<li class="ask"></li>
-		<li class="ask"></li>
-	</ul>
-	<ul id="cold">
-		<li class="water"></li>
-		<li class="water"></li>
-		<li class="water"></li>
-		<li class="water"></li>
-		<li class="water"></li>
-		<li class="water"></li>
-		<li class="water"></li>
-		<li class="water"></li>
-	</ul>
-</div>
-<div id="arctic"></div>	
-<div id="fox"></div>
-<div>
-    <form action="#" method="get">
-     <p><input type="textfield" id="dusk"><input type="button" id="dawn" value="Add a meaning"></p>
-    </form>
-    <h1>To do list</h1>
-    <ol id="morning" type="I">
+         var Password = prompt ("PROFILE");
+        while (Password != "Albert Wesker") {
+            prompt("ERROR");
+        }
+        var Word = prompt ("PASSWORD");
+        while (Word != "umbrella") {
+        prompt("ERROR")
+        }
+      /* alert("FINE"); */
+	function swapImage(imgToSwap) {
+		imgToSwap.src = "img/giphy.gif";
+		imgToSwap.alt = "Указатель над кнопкой!";
+	}
+	function swapBack(imgToSwap) {
+		imgToSwap.src = "img/giphy (1).gif";
+		imgToSwap.alt = "Наведите на меня указатель!";
+	}
+	window.addEventListener('load',initialize,false);
+
+	function initialize() {
+		document.getElementById("myButton").addEventListener('click',function(e) {
+			var left = window.getComputedStyle(e.target).getPropertyValue("top");
+			left = parseInt(left, 10);
+			moveSquare(left,100);
+		}, false)
+	}
+
+	function moveSquare(left,numMoves) {
+		document.getElementById("myButton").style.top = left+"px";
+
+		if (numMoves > 0) {
+			numMoves--;
+			left++;
+			setTimeout(moveSquare,10,left,numMoves);
+		} else {
+			return;
+		}
+	}
+       window.addEventListener("load",registerEvents,false);
+        function registerEvents(e) {
+            document.getElementById("ask").addEventListener("click",findAnswer,false);
+        }
         
-    </ol>
-</div>
-<div id="do"><img id="ferrum" src="image/kak-vyvesti-pyatna-krovi-na-odezhde.png">
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-    <div class="act"><div class="fire"></div><div class="job"></div></div>
-</div>
-
-</div>
-<div id="login">
-    <a href="form.html"><p id="open">Login</p></a>
-    <form>
-        <p>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-        </p>
-        <p>
-            <label for="password">Password: </label>
-            <input type="text" name="password" id="password">
-        </p>
-        <p class="button">
-            <input type="submit" name="button" id="button" value="Submit" >
-        </p>
-    </form>
-    </div>
-    
-<img src="image/morpheus-neo-the-matrix-youtube-red-pill-and-blue-pill-morpheus-pills.png" id="beard" title="I know you secret!">
-<img src="image/maskone.png" id="buffalo" title="Take off you mask...">
-<img src="image/Shadow-Warrior-Life-Size-Hojis-Mask-for-Cosplay-Papercraft.png" id="bear" title="We recognize them voices.">
-<img src="image/trish.png" id="dino" title="Where do you now?">
-<img src="image/jhfxkfjhbx.png" id="crisis" title="When do we start?">
-    <img src="image/zgfdgfz.png" id="three" title="Do you remember those times?">
-
-   <div id="main">
-        <button class="left" onclick="slider.left();"><</button>
-            <div id="scr"></div>
-            <button class="right" onclick="slider.right();">></button>
-       </div>
-<script id="seldom" type="text/template">
-        <p><img src="image/depositphotos_66606849-stock-photo-black-hand-of-death-the.png"></p>
+        function findAnswer() {
+            var question = document.getElementById("virus").value;
+            var re = new RegExp("G-virus");
+            
+            if (re.test(question)===true) {
+                document.getElementById("answer").innerHTML = "BIOHAZARD";
+                console.log("G-virus!");
+            }
+            
+            
+        
+        }
     </script>
-	</body>
+	<title>Команда "Победители"</title>
+	<!--<meta http-equiv="refresh" content="15; url=dragon/index.html">-->
+	<!--<base href="" target=frame_name>-->
+</head>
+<body class="bot3" id="prison"  text=#78bed0 bgcolor=#112232 scroll=no link=#78bed0 vlink=#78bed0 alink=#78bed0>
+	<header>
+		<section>
+	<h1><a href="table/index.html" style="color:white" class="beverage">
+Team information "UNSTOPPABLE!"</a></h1></section>
+</header>
+<h2><a style="color:black; text-shadow: black -1mm 1mm 4px" href="https://www.youtube.com/watch?v=PPD3ivNBPYg">Иван</a><br>
+<a style="color:black; text-shadow: black -1mm 1mm 4px" href="face1/index.html">Капитан команды</a></h2>
+<textarea class="bot" cols=50 rows=10>Выпускник по специальности "Снайпер". Обладает 5-летним практическим опытом руководства техническими проектами.</textarea>
+</section>
+<section>
+<h2>Петр</h2>
+<div><p style="text-decoration:overline; color:#000000">Окончил МГТУ им. <a style="color:#000000" href="https://www.youtube.com/watch?v=KAkqLFAy0yE" onclick="alert('LEGENDARY');">Баумана</a> по специальности "Робототехника". <a style="color:#000000" href="https://www.youtube.com/watch?v=4xK8rCBoZxU">Им</a>еет огромный <a style="color:#000000"s href="https://www.youtube.com/watch?v=EsNTQ4HY1Vk">опыт</a> конструирования роботов.</p></div>
+</section>
+<section id="virus">
+<h2>Елизавета</h2>
+<textarea  style="color: #708090" class="bot1" cols=45 rows=13>Окончила Санкт-Петербургский политехнический унивеситет по напрвлению "Графический дизайн". После знакомства с Петром стала активно интересоваться промышленным дизайном.</textarea>
+    <button id="ask" type="button">Push</button>
+    <div id="answer" style="color:red"></div>
+</section>
+<a href="https://www.youtube.com/watch?v=e4eykXId8bs" accesskey="z"></a>
+<section>
+<h2>Алексей</h2>
+<textarea style="color: #708090" class="bot2" cols=31 rows=13>Отвечает за программирование роботов.</textarea>
+</section>
+<p><a href="menu/index.html" class="button">MENU</a></p>
+    <form><button class="finger"><a href="#prison">J</a></button></form>
+<p class="ssyl"><a href="https://www.youtube.com/watch?v=Loj0rXZN_Vs"> Ссылка</a> на направление <a href="video/index.html">TechRussia </a></p>
+<div id="cite"> "Мы живём в <a href="https://www.youtube.com/watch?v=hEdAGOjXXOA" color=#45525b style="color:#45525b">эпоху</a>, когда расстояние от самых безумных фантазий до совершенно реальной действительности сокращается с невероятной быстротой." Максим Горький </div>
+<footer>
+	<form action="mailto:partners@a-techevent.ru" method="post" enctype="text/plain">
+		<p><input type="submit" value="Отправить письмо организаторам"></p>
+	</form>
+	</footer>
+	<div class="bot4">
+	<script>
+		var dNow = new Date ();
+		var sNow = dNow.getDate() + "." + dNow.getMonth () + "." + dNow.getFullYear ();
+		document.write (sNow);
+	</script>
+</div>
+	<div id="Helium">
+		<a class="hydrogen" href="scratch/index.html">Lithium</a><a class="hydrogen" href="dragon/index.html">Beryllium</a><a class="hydrogen" href="dragon/doc/index.html">Borum</a><a class="hydrogen" href="one/index.html">Carbonium</a><a class="hydrogen" href="one/index2.html">Nitrogenium</a>
+	</div>
+	<img src="img/logo.gif" id="myButton" onmouseover="swapImage(this);" onmouseout="swapBack(this);"alt="Наведите на меня указатель!">
+<script >
+	Ext.onReady(function() {
+ var ceLinks = Ext.select("UL[id=navbar] LI");
+ ceLinks.on("mouseover", function(e, t) {
+ Ext.get(this).addClass("hovered");
+ });
+ ceLinks.on("mouseout", function(e, t) {
+ Ext.get(this).removeClass("hovered");
+ });
+});
+
+</script>
+    
+</body>
 </html>
